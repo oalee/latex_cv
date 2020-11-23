@@ -134,6 +134,8 @@ Position: & \@claimedposition \\
 % Textview commands
 
 \newcommand{\experience}[2]{%
+\smallskip
+
   \mbox { \hspace{1em} \scshape \textbf{#1} }%
 }
 
@@ -142,19 +144,16 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\datedexperience}[2]{%
-  \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
-}
-
-% \newcommand{\explanation}[1]{%
-%     \mbox { \vspace{2em} \scshape \hspace{1.2em} \footnotesize #1}\\[0.05cm]
-% }
+  \begin{small} \mbox { \hspace{1em}  \textbf{#1} } \end{small} \hfill \datetext{#2} \\[0.06cm]
+  }
 
 \newcommand{\explanation}[1]{%
-\mbox{ \scshape \hspace{1.2em} \footnotesize  \textbf{#1}  } \medskip \\[0.05cm]
+\mbox { \hspace{1.2em} \small   \textit{#1}}\\[0.005cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-   \indent  \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \medskip \\[0.1cm]
+    \indent   
+    \begin{minipage}{0.96\linewidth}   \medskip \footnotesize #1 \end{minipage} \\[0.05cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
@@ -163,7 +162,7 @@ Position: & \@claimedposition \\
 
 \newcommand{\addblocktext}[2]{%
   \section{#1} 
-  \indent \explanationdetail{\hspace{4ex} #2}
+  \indent  \explanationdetail{\hspace{4ex} #2}
 }
 
 \newcommand\createskill[2]{%
