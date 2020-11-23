@@ -143,16 +143,17 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\datedexperience}[2]{%
-  \begin{small} \mbox { \hspace{1em}  \textbf{#1} } \end{small} \hfill \datetext{#2} \\[0.06cm]
+  
+  \begin{minipage}{0.96\linewidth}  \textbf{#1}   \hfill \datetext{#2} \end{minipage} \vfill
   }
 
 \newcommand{\explanation}[1]{%
-\mbox { \hspace{1.2em} \small   \textit{#1}}\\[0.1cm]
+\mbox { \small   \textit{#1}} \vfill \smallskip
 }
 
 \newcommand{\explanationdetail}[1]{%
     \indent   
-    \begin{minipage}{0.96\linewidth}  \footnotesize #1 \end{minipage} \\[0.05cm]
+    \begin{minipage}{0.96\linewidth}  \footnotesize #1 \end{minipage} \\[0.1cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
